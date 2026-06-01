@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
-      <Card></Card>
+      <Card>
+        Hello
+      </Card>
     </>
   )
 }

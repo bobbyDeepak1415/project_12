@@ -1,5 +1,5 @@
 
-const Card = ({children,padding="normal",variant="default",hover=true}) => {
+const Card = ({children,padding="normal",variant="default",hover=true,className=""}) => {
   return (
     <div>
       {children}
