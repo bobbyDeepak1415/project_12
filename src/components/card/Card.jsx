@@ -1,10 +1,19 @@
+const Card = ({
+  children,
+  padding = "normal",
+  variant = "default",
+  hover = true,
+  className = "",
+}) => {
+  const baseStyles = "";
 
-const Card = ({children,padding="normal",variant="default",hover=true,className=""}) => {
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
+  const paddingStyles = {};
 
-export default Card
+  const variants = {};
+
+  const hoverStyles = hover ? "hover:bg-blue-700" : "";
+
+  return <div>{children}</div>;
+};
+
+export default Card;
