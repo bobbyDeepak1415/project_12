@@ -1,9 +1,10 @@
+import Card from "./components/card/Card"
 
 function App() {
 
   return (
     <>
-      Hello from app
+      <Card></Card>
     </>
   )
 }
