@@ -1,8 +1,8 @@
 
-const Card = () => {
+const Card = ({children,padding="normal",variant="default",hover=true}) => {
   return (
     <div>
-      Card Baby
+      {children}
     </div>
   )
 }
