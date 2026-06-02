@@ -21,7 +21,7 @@ const Card = ({
     dark: "bg-gray-800 text-white border-gray-300",
   };
 
-  const hoverStyles = hover ? "hover:bg-blue-700" : "";
+  const hoverStyles = hover ? "hover:bg-blue-700 shadow-lg" : "";
 
   return (
     <div

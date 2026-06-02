@@ -5,4 +5,6 @@
 
 3. created the baseStyles,which will be applied to everything
 
-4.
+4. created the variants object for different colors
+
+5. created the paddingtyles for different padding sizes like none,small,normal,large
