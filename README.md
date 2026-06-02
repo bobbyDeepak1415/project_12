@@ -8,3 +8,5 @@
 4. created the variants object for different colors
 
 5. created the paddingtyles for different padding sizes like none,small,normal,large
+
+6. created the hoverStyles for a boolean value

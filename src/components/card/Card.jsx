@@ -21,11 +21,11 @@ const Card = ({
     dark: "bg-gray-800 text-white border-gray-300",
   };
 
-  const hoverStyles = hover ? "hover:bg-blue-700 shadow-lg" : "";
+  const hoverStyles = hover ? "hover:shadow-xl hover:-translate-x-1" : "";
 
   return (
     <div
-      className={`${baseStyles} ${variants[variant]} ${paddingStyles[padding]}`}
+      className={`${baseStyles} ${className} ${variants[variant]} ${paddingStyles[padding]} ${hoverStyles}`}
     >
       {children}
     </div>
