@@ -21,3 +21,4 @@
 12. cardHeader is the section of the card where we have the title and the rating.this takes children and a className for extra css. we add styling to it and test it in the app.jsx
 
 13. cardTitle is present inside of the cardHeader.this also takes className and children. this is meant to be bold and big. style it accordingly and test it in the app.jsx
+..
