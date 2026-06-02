@@ -18,4 +18,4 @@
 
 11. The cardImage takes src and an alt for accessiblility. we conditionally render the image in The CardImage component, if there is an src coming from app.jsx. or we gracefully display a placeholder ui in a span. we add styling to it then
 
-12. 
+12. cardHeader is the section of the card where we have the title and the rating.this takes children and a className for extra css. we add styling to it and test it in the app.jsx
