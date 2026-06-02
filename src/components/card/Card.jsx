@@ -5,7 +5,8 @@ const Card = ({
   hover = true,
   className = "",
 }) => {
-  const baseStyles = "shadow-md rounded-lg transition-all duration-300";
+
+  const baseStyles="shadow-md hover:transition-all duration-300"
 
   const paddingStyles = {
     none: "",
@@ -21,11 +22,11 @@ const Card = ({
     dark: "bg-gray-800 text-white border-gray-300",
   };
 
-  const hoverStyles = hover ? "hover:shadow-xl hover:-translate-x-1" : "";
+  // const hoverStyles = hover ? "hover:shadow-xl hover:-translate-x-1" : "";
 
   return (
     <div
-      className={`${baseStyles} ${className} ${variants[variant]} ${paddingStyles[padding]} ${hoverStyles}`}
+      className={`${baseStyles} ${className} ${variants[variant]} ${paddingStyles[padding]} `}
     >
       {children}
     </div>
