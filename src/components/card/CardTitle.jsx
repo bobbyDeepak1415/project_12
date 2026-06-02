@@ -1,7 +1,8 @@
 
-const CardTitle = () => {
+const CardTitle = ({className,children}) => {
   return (
-    <div>
+    <div className={`${className} mb-2 text-2xl font-bold `}>
+{children}
       
     </div>
   )
