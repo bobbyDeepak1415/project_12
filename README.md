@@ -18,4 +18,4 @@
 
 11. The cardImage takes src and an alt for accessiblility. we conditionally render the image in The CardImage component, if there is an src coming from app.jsx. or we gracefully display a placeholder ui in a span. we add styling to it then
 
-12.
+12. 
