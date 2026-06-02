@@ -8,7 +8,7 @@ function App() {
         Hello
         <h2>Card baby</h2>
         <p>This is working</p>
-        <CardImage src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" />
+        <CardImage  />
       </Card>
     </div>
   );

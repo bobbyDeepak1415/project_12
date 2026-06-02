@@ -16,7 +16,7 @@ const Card = ({
   };
 
   const variants = {
-    default: "bg-gray-100 border-gray-600",
+    default: "bg-gray-50 border-gray-600",
     primary: "bg-blue-200 border-blue-800",
     success: "bg-green-200 border-green-800",
     dark: "bg-gray-800 text-white border-gray-300",

@@ -4,8 +4,8 @@ const CardImage = ({ src, alt = "Card Image" }) => {
       {src ? (
         <img className="w-full h-full object-cover" src={src} alt={alt} />
       ) : (
-        <div className=" bg-linear-to-br from-gray-100 to-gray-300">
-          <span>No Image available</span>
+        <div className="w-full h-full bg-linear-to-br from-gray-100 to-gray-300 flex justify-center items-center">
+          <span className="text-sm">No Image available</span>
         </div>
       )}
     </div>
