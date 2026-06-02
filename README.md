@@ -13,3 +13,7 @@
 8. added bsic styling to the outermost div in the app.jsx component.
 
 9. tested it out by adding a few children to the app.jsx
+
+10. created folders like CardHeader,CardImage cardFooter etc
+
+11. 

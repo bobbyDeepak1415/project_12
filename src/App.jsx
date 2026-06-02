@@ -1,4 +1,5 @@
 import Card from "./components/card/Card";
+import CardImage from "./components/card/CardImage";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         Hello
         <h2>Card baby</h2>
         <p>This is working</p>
+        <CardImage  />
       </Card>
     </div>
   );
