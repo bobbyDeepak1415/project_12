@@ -43,6 +43,9 @@
 
 25. below the cardHeader, we conditionally render the cardBody if the card description is present. or we display a place holder saying no description available
 
+26. below this we render the CarFooter.jsx. in this we conditionally render the details like price and a book now button. if the price is not present then we display a placeholder saying contact for pricing.
 
-26. below this we render the CarFooter.jsx,
+
+27. 
+
 

@@ -53,9 +53,7 @@ function App() {
                   </span>
                 )}
 
-                <CardFooter
-                  className={card.id % 2 === 0 ? "border-blue-200" : ""}
-                >
+                <CardFooter>
                   <div className="flex items-center justify-between">
                     {card.price ? (
                       <span className="font-bold text-2xl text-gray-800">
@@ -75,8 +73,25 @@ function App() {
             </Card>
           ))}
         </div>
-        <div>
+        <div className="mt-16">
+          <Card variant="dark">
+            <h2 className="font-bold text-3xl mb-4">Project structure</h2>
+            <div className="space-y-3 text-gray-300 text-lg font-mono">
+              <p>📁src/</p>
+              <p className="ml-4">📁components/</p>
+              <p className="ml-6">📁card/</p>
 
+              <p className="ml-12">📄Card.jsx - Main card wrapper</p>
+              <p className="ml-12">📄CardHeader.jsx Header</p>
+              <p className="ml-12">📄CardTitle.jsx Title</p>
+              <p className="ml-12">📄CardBody.jsx Body Content</p>
+              <p className="ml-12">📄CardFooter.jsx Footer</p>
+              <p className="ml-12">📄CardImage.jsx Image with fallback ui</p>
+              <p className="ml-4">📁data/</p>
+              <p className="ml-8">📄cardsData.jsx</p>
+              <p className="ml-4">📄App.jsx Main Application</p>
+            </div>
+          </Card>
         </div>
       </div>
     </div>

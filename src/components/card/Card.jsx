@@ -16,7 +16,7 @@ const Card = ({
 
   const variants = {
     default: "bg-white border border-gray-200",
-    primary: "bg-blue-100 border border-blue-200",
+    primary: "bg-blue-50 border border-blue-300",
     success: "bg-green-200 border border-green-800",
     dark: "bg-gray-800 text-white border border-white",
   };
@@ -33,4 +33,3 @@ const Card = ({
 };
 
 export default Card;
-......
