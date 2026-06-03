@@ -31,4 +31,9 @@
 17. the first div in the content wrapper will have an h1 and a p tag. style it accordingly.
 
 18. we create a folder called data and a file in it called cardsData.js and place the data here.
-18. in the second div which is the grid we map throught the objects in the array of cardsData.js
+18. in the second div which is the grid we map throught the objects in the array of cardsData.js and return a Card.jsx
+
+20. we style this div according to the grid rules for different screen sizes.
+21. in the card we conditionally pass the variant primary if the card id is divisible by 2. also we give the key to be the card.id and paddding none
+
+22. 
