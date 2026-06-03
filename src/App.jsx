@@ -3,6 +3,7 @@ import Card from "./components/card/Card";
 import CardImage from "./components/card/CardImage";
 import CardHeader from "./components/card/CardHeader";
 import CardTitle from "./components/card/CardTitle";
+import CardBody from "./components/card/CardBody";
 
 function App() {
   return (
@@ -26,10 +27,28 @@ function App() {
               {card.image && <CardImage src={card.image} alt={card.title} />}
               <div className="p-6">
                 <CardHeader>
-
-                {card.category && <span className= "text-sm inline-block rounded-full mb-2 font-semibold px-3 py-1 bg-blue-100 text-blue-700 " >{card.category}</span>}
-                <CardTitle></CardTitle>
+                  {card.category && (
+                    <span className="text-sm inline-block rounded-full mb-2 font-semibold px-3 py-1 bg-blue-100 text-blue-700 ">
+                      {card.category}
+                    </span>
+                  )}
+                  <CardTitle
+                    className={card.id % 2 === 0 ? "text-blue-800" : ""}
+                  >
+                    {card.title}
+                  </CardTitle>
+                  {card.rating && (
+                    <div className="flex items-center gap-1">
+                      <span>⭐</span>
+                      <span>{card.rating}/5.0</span>
+                    </div>
+                  )}
                 </CardHeader>
+                {card.description ? (
+                  <CardBody>{card.description}</CardBody>
+                ) : (
+                  <CardBody>No description available</CardBody>
+                )}
               </div>
             </Card>
           ))}
