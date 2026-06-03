@@ -1,5 +1,5 @@
 import Card from "./components/card/Card";
-import CardTitle from "./components/card/CardTitle";
+import CardBody from "./components/card/CarBody";
 
 function App() {
   return (
@@ -8,9 +8,9 @@ function App() {
         Hello
         <h2>Card baby</h2>
         <p>This is working</p>
-        <CardTitle>
-          <p>Title</p>
-        </CardTitle>
+       <CardBody>
+<p>Body</p>
+       </CardBody>
       </Card>
     </div>
   );
