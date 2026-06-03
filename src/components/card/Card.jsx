@@ -5,8 +5,7 @@ const Card = ({
   hover = true,
   className = "",
 }) => {
-
-  const baseStyles="shadow-md hover:transition-all duration-300"
+  const baseStyles = "rounded-lg shadow-md transition-all duration-300";
 
   const paddingStyles = {
     none: "",
@@ -16,13 +15,13 @@ const Card = ({
   };
 
   const variants = {
-    default: "bg-gray-50 border-gray-600",
-    primary: "bg-blue-200 border-blue-800",
-    success: "bg-green-200 border-green-800",
-    dark: "bg-gray-800 text-white border-gray-300",
+    default: "bg-white border border-gray-200",
+    primary: "bg-blue-100 border border-blue-200",
+    success: "bg-green-200 border border-green-800",
+    dark: "bg-gray-800 text-white border border-white",
   };
 
-  const hoverStyles = hover ? "hover:shadow-xl hover:-translate-x-1" : "";
+  const hoverStyles = hover ? "hover:shadow-xl hover:-translate-y-2" : "";
 
   return (
     <div

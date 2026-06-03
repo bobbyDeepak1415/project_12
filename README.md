@@ -41,4 +41,8 @@
 
 24. below the cardTitle we conditionally render the card.rating in a div. this is the last thing in the cardHeader.
 
-25. below the cardHeader, we conditionally render the cardBody if the card description is present.
+25. below the cardHeader, we conditionally render the cardBody if the card description is present. or we display a place holder saying no description available
+
+
+26. below this we render the CarFooter.jsx,
+

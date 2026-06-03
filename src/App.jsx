@@ -8,7 +8,7 @@ import CardFooter from "./components/card/CardFooter";
 
 function App() {
   return (
-    <div className="p-8 min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
+    <div className="p-8 min-h-screen bg-linear-to-br from-gray-200 to-gray-400">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="mb-4 text-5xl font-bold text-gray-800">
@@ -53,20 +53,30 @@ function App() {
                   </span>
                 )}
 
-                <CardFooter className={card.id%2===0 ? "border-blue-200":""}>
+                <CardFooter
+                  className={card.id % 2 === 0 ? "border-blue-200" : ""}
+                >
                   <div className="flex items-center justify-between">
                     {card.price ? (
-                      <span className="font-bold text-2xl">{card.price}</span>
-                    ):
-                    <span>Contact for pricing</span>
-                    }
-                    <button className="bg-blue-500 rounded-md px-3 py-1 text-white">Book now</button>
+                      <span className="font-bold text-2xl text-gray-800">
+                        {card.price}
+                      </span>
+                    ) : (
+                      <span className="text-gray-500 text-sm">
+                        Contact for pricing
+                      </span>
+                    )}
+                    <button className="bg-blue-500 hover:bg-blue-700 transition-colors rounded-md px-3 py-1 text-white font-medium">
+                      Book now
+                    </button>
                   </div>
                 </CardFooter>
-                
               </div>
             </Card>
           ))}
+        </div>
+        <div>
+
         </div>
       </div>
     </div>
