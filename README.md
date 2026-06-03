@@ -26,14 +26,15 @@
 
 15. Inside the cardfooter we have the price and a call to action button like bookNow. style it accordingly. this also takes children and className
 
-16. in app.jsx remove everything and open a div which will be the outer most div. inside this we will have another div which will be the content wrapper. iinside this we will have 3 different divs. the first one will be the hearder or the top section of the page. the second div will be the actual card grid. and the third will be the final card for the project structure. the 
+16. in app.jsx remove everything and open a div which will be the outer most div. inside this we will have another div which will be the content wrapper. iinside this we will have 3 different divs. the first one will be the hearder or the top section of the page. the second div will be the actual card grid. and the third will be the final card for the project structure. the
 
 17. the first div in the content wrapper will have an h1 and a p tag. style it accordingly.
 
 18. we create a folder called data and a file in it called cardsData.js and place the data here.
-18. in the second div which is the grid we map throught the objects in the array of cardsData.js and return a Card.jsx
+19. in the second div which is the grid we map throught the objects in the array of cardsData.js and return a Card.jsx
 
 20. we style this div according to the grid rules for different screen sizes.
 21. in the card we conditionally pass the variant primary if the card id is divisible by 2. also we give the key to be the card.id and paddding none. as the children we pass the card.image conditionally if the image exists and the title as the alt for accessibility if the image does not exist.
 
-22. 
+22. below the cardImage we have a div for the cardHeader and inside this we have the conditionally render the category if it exists in a span tag. and we style it.
+23. and below this in the cardHeader we render the cardTitle
