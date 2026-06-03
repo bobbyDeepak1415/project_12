@@ -1,7 +1,7 @@
 
-const Cardody = ({children,className}) => {
+const Cardody = ({children,className=""}) => {
   return (
-    <div className={`${className}`}>
+    <div className={`${className} text-gray-600 `}>
       {children}
     </div>
   )
