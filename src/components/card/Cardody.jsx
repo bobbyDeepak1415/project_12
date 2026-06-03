@@ -1,8 +1,8 @@
 
-const Cardody = () => {
+const Cardody = ({children,className}) => {
   return (
-    <div>
-      
+    <div className={`${className}`}>
+      {children}
     </div>
   )
 }
