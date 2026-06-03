@@ -3,7 +3,8 @@ import Card from "./components/card/Card";
 import CardImage from "./components/card/CardImage";
 import CardHeader from "./components/card/CardHeader";
 import CardTitle from "./components/card/CardTitle";
-import CardBody from "./components/card/CardBody";
+import CardBody from "./components/card/CarBody";
+import CardFooter from "./components/card/CardFooter";
 
 function App() {
   return (
@@ -47,8 +48,22 @@ function App() {
                 {card.description ? (
                   <CardBody>{card.description}</CardBody>
                 ) : (
-                  <CardBody>No description available</CardBody>
+                  <span className="text-gray-600 italic">
+                    No description available
+                  </span>
                 )}
+
+                <CardFooter className={card.id%2===0 ? "border-blue-200":""}>
+                  <div className="flex items-center justify-between">
+                    {card.price ? (
+                      <span className="font-bold text-2xl">{card.price}</span>
+                    ):
+                    <span>Contact for pricing</span>
+                    }
+                    <button className="bg-blue-500 rounded-md px-3 py-1 text-white">Book now</button>
+                  </div>
+                </CardFooter>
+                
               </div>
             </Card>
           ))}

@@ -38,3 +38,7 @@
 
 22. below the cardImage we have a div for the cardHeader and inside this we have the conditionally render the category if it exists in a span tag. and we style it.
 23. and below this in the cardHeader we render the cardTitle
+
+24. below the cardTitle we conditionally render the card.rating in a div. this is the last thing in the cardHeader.
+
+25. below the cardHeader, we conditionally render the cardBody if the card description is present.
