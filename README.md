@@ -34,6 +34,6 @@
 18. in the second div which is the grid we map throught the objects in the array of cardsData.js and return a Card.jsx
 
 20. we style this div according to the grid rules for different screen sizes.
-21. in the card we conditionally pass the variant primary if the card id is divisible by 2. also we give the key to be the card.id and paddding none
+21. in the card we conditionally pass the variant primary if the card id is divisible by 2. also we give the key to be the card.id and paddding none. as the children we pass the card.image conditionally if the image exists and the title as the alt for accessibility if the image does not exist.
 
 22. 
